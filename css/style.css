@@ -1,0 +1,50 @@
+.spinner{
+    width:50px;
+    height:50px;
+    border:10px solid peru;
+    border-radius: 50%;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    animation:spin 3s infinite;
+    top:50%;
+    left:50%;
+    position:absolute;
+}
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+.spinner:hover{
+    animation:sphov 2s infinite;
+    cursor:pointer
+}
+@keyframes sphov{
+    0%{
+        transform:rotate(0deg) scale(2);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(360deg) scale(2);
+    }
+}
+.spinner:active{
+    animation:boom 1.5s;
+}
+@keyframes boom{
+    0%{
+        transform:rotate(0deg) scale(5);
+    }
+    100%{
+        transform:rotate(360deg) scale(5);
+    }
+}
+/* 퍼지는 모습을 구현할 것 */
