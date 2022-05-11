@@ -37,7 +37,7 @@
     }
 }
 .spinner:active{
-    animation:boom 1.5s;
+    animation:boom 1.5s infinite;
 }
 @keyframes boom{
     0%{
